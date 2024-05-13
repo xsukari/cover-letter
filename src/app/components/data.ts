@@ -1,7 +1,5 @@
 import fs from "fs"
 
-export const maxValue = 10
-
 export const categories = {
     self: "self",
     recipient: "recipient",
@@ -32,6 +30,23 @@ const path = {
     }
 }
 
+interface ParagraphElement {
+    text: string
+}
+export interface Text {
+    paragraphs: ParagraphElement[],
+    closing: string
+}
+
+export interface Recipient {
+    salutation: string,
+    recruiter: string,
+    company: string,
+    address1: string,
+    address2: string,
+    position: string
+}
+
 interface Person {
     firstName: string,
     lastName: string,
@@ -51,8 +66,7 @@ export interface Contact {
 }
 export interface Self {
     person: Person,
-    contact: Contact,
-    location: string
+    contact: Contact
 }
 
 function getDataFile(category: string): string {
@@ -63,7 +77,7 @@ function getDataFile(category: string): string {
     }
 }
 
-export function getData(category: string): ( Self ) {
+export function getData(category: string): ( Self | Recipient | Text ) {
     const file = fs.readFileSync(getDataFile(category), "utf8")
     const data = JSON.parse(file)
 
