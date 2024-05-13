@@ -2,7 +2,7 @@ import Picture from "./components/picture"
 import Person from "./components/person"
 import Contact from "./components/contact"
 import Text from "./components/text"
-import Address from "./components/address"
+import Recipient from "./components/recipient"
 
 export default function Home() {
     return (
@@ -18,7 +18,7 @@ export default function Home() {
                 {/* Right column */}
 
                 <Person />
-                <Address />
+                <Recipient />
                 <Text />
 
             </div>
