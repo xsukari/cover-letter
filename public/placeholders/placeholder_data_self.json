@@ -1,0 +1,34 @@
+{
+    "person": {
+        "firstName": "firstName",
+        "lastName": "lastName",
+        "title": "title"
+    },
+    "contact": {
+        "mobile": {
+            "value": "mobile",
+            "visible": true
+        },
+        "mail": {
+            "value": "mail",
+            "visible": true
+        },
+        "address": {
+            "value": "address",
+            "visible": true
+        },
+        "social": {
+            "value": "social",
+            "visible": true
+        },
+        "repo": {
+            "value": "repo",
+            "visible": true
+        },
+        "homepage": {
+            "value": "homepage",
+            "visible": true
+        }
+    },
+    "location": "location"
+}
