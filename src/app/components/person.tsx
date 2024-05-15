@@ -9,12 +9,12 @@ export default function person() {
             <div className="px-7 py-[8%]">
                 <div className="text-7xl py-2 tracking-[.025em]">
                     <div className={sonoLight.className}>
-                        {_self.person.firstName.toUpperCase()}
+                        {_self.person.name.first.toUpperCase()}
                     </div>
                 </div>
                 <div className="text-7xl py-2 tracking-[.025em]">
                     <div className={sonoLight.className}>
-                        {_self.person.lastName.toUpperCase()}
+                        {_self.person.name.last.toUpperCase()}
                     </div>
                 </div>
                 <div className="text-2xl py-2 tracking-wide">
