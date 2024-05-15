@@ -21,7 +21,7 @@
 1. Put a JPG image of yourself as "portrait.jpg", with a 1:1 aspect ratio, I used 1600 px * 1600 px, into /cv/public/.
 2. Put a PNG image of your signature as "signature.png", with a recommended 3:1 aspect ratio, I used 300 px * 100 px, into /cv/public/.
 3. Copy the placeholder data files (*.JSON) from /cv/public/placeholders/ and paste them into /cv/public/, then remove the "placeholder_" from their name.
-4. Fill out the data files you just copied with your information. You can adjust the amount of paragraphs in data_text.json, you can remove or add any amount, but keep space in mind.
+4. Fill out the data files you just copied with your information. You can adjust the amount of paragraphs in data_text.json, you can remove or add any amount, but keep space in mind. You can also remove the value of address2 in data_recipient.json, if you don't want to have 2 address lines.
 5. Install dependencies with "pnpm install".
 6. Run the development server with "pnpm dev".
 7. Open [http://localhost:3000](http://localhost:3000) with your browser.
