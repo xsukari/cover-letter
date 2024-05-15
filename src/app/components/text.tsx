@@ -11,7 +11,7 @@ function getSignature(): string {
     if (fs.existsSync(process.cwd() + "/public/signature.png")) {
         return "/signature.png"
     } else {
-        return "/placeholders/placeholder_signature.jpg"
+        return "/placeholders/placeholder_signature.png"
     }
 }
 
@@ -62,7 +62,11 @@ export default function text() {
                 </div>
                 <div className="py-2 text-[15px]">
                     <div className={openSans.className}>
-                        {_self.person.firstName + " " + _self.person.lastName}
+                        {
+                            _self.person.name.showUnderSignature ?
+                                (_self.person.name.first + " " + _self.person.name.last) :
+                                ""
+                        }
                     </div>
                 </div>
             </div>
