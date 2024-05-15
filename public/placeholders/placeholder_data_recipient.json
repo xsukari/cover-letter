@@ -2,7 +2,7 @@
     "company": "company",
     "address1": "address1",
     "address2": "address2",
-    "title": "title",
+    "position": "position",
     "salutation": "salutation",
-    "name": "name"
+    "recruiter": "recruiter"
 }

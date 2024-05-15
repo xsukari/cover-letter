@@ -1,7 +1,10 @@
 {
     "person": {
-        "firstName": "firstName",
-        "lastName": "lastName",
+        "name": {
+            "first": "firstName",
+            "last": "lastName",
+            "showUnderSignature": true
+        },
         "title": "title"
     },
     "contact": {

@@ -48,6 +48,11 @@ export interface Recipient {
 }
 
 interface Person {
+    name: {
+        first: string,
+        last: string,
+        showUnderSignature: boolean
+    }
     firstName: string,
     lastName: string,
     title: string
