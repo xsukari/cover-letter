@@ -21,7 +21,7 @@ function textElements(): JSX.Element[] {
     
     _text.paragraphs.forEach(paragraph => {
         elements.push (
-            <div className="py-2 text-sm" key={i}>
+            <div className="py-2 text-sm" key={"text" + i}>
                 <div className={openSans.className}>
                     {paragraph.text}
                 </div>
